@@ -20,4 +20,4 @@ Durante este projeto, apliquei conceitos fundamentais de desenvolvimento web apr
 - Implementação de layouts modernos sem dependência de frameworks pesados.
 
 ---
-Projetado e desenvolvido por [Seu Nome].
+Projetado e desenvolvido por Pedro Henrique Bosso.
