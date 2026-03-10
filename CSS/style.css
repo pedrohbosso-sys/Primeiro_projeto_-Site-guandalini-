@@ -1,0 +1,432 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    font-family: "poppins", sans-serif;
+}
+
+body{
+    background-color: #e3e3e3; 
+    left:2;
+    right: 2;
+} 
+
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+
+}
+
+header .btn-contato button, .hero-site button , .hoteis button{
+    font-size: 18px;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    cursor: pointer;
+    transition: .5s;
+} 
+
+header .btn-contato button:hover, .hero-site button:hover{
+    background-color: white;
+    color: #000;
+}
+
+/* Estilo do Header */
+
+
+header{
+    width:100%;
+    padding:4px 0;
+    top:2;
+    left:2;
+    right: 2;
+    background:#000;
+}
+
+header .interface{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+header .logo img{
+    max-width:180px;
+}
+
+header .menu-desktop nav ul li{
+    display:inline-block;
+    margin:0 40px;
+}
+
+header .menu-desktop nav ul li a{
+    color:white;
+    text-decoration:none;
+    display:inline-block;
+    transition:.2s;
+}
+
+.menu-desktop nav a:hover{
+    transform:scale(1.05);
+    color:#238DC1;
+}
+
+header .btn-contato button{
+    width:140px;
+    height:50px;
+    background:transparent;
+    border:1px solid white;
+    color:white;
+    cursor:pointer;
+    transition:.3s;
+}
+
+header .btn-contato button:hover{
+    background:#238DC1;
+    border-color:#238DC1;
+}
+
+
+
+
+/* estilo do hero */
+
+section.hero-site{
+    height: 98vh;
+    background-image: 
+        linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+        url(../Imagens/FotoEscritorio2.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+
+.hero-site .interface{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.hero-site .txt-hero h1{
+    font-size: 4em;
+    line-height: 70px;
+    font-weight: 200;
+}
+
+.hero-site .txt-hero h1 span{
+    display: block;
+    font-weight: 800;
+    color: #0072B1;
+}
+
+.hero-site .txt-hero p{
+    font-size: 20px;
+    font-weight: 300;
+    margin: 20px 0;
+    
+    
+}
+
+.hero-site .txt-hero p span{
+    display: block;
+   
+}
+
+.hero-site button{
+    width: 220px;
+    height: 60px;
+    font-size: 20px;
+}
+
+/* Estilo das vantagens */
+
+section.vantagens{
+    padding: 80px 0;
+}
+
+.vantagens .itens-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10%;
+    margin-bottom: 60px;
+
+}
+
+.vantagens .itens-container .img-itens img{
+    max-width: 480px;
+}
+
+.vantagens .itens-container txt-itens h3 {
+    font-size: 3em;
+    line-height: 50px;
+    margin-bottom: 20px;
+}
+
+.itens-container txt-itens h3 span{
+    font-weight: 300;
+}
+
+
+/* Estilo dos botões de contato */
+
+section.contato{
+    background-color: #fff;
+    padding: 80px 0;
+}
+
+.txt-contato, .icons-contatos{
+    display: inline-block;
+    width: 50%;
+    margin-right: -4px;
+    vertical-align: middle;
+}
+
+.contato .txt-contato h3{
+    font-size: 2.5em;
+    line-height: 50px;
+    font-weight: 300;
+    margin-bottom: 20px;
+    color: #238DC1;
+}
+
+.contato .txt-contato h3 span{
+    display: block;
+    font-weight: 700;
+    color: #0072B1;
+}
+
+.contato .icons-contatos a{
+    text-decoration: none;
+}
+
+.contato .icons-contatos button{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 60%;
+    height: 60px;
+    margin: 0 auto 20px auto;
+    padding: 0 60px;
+
+    background-color: transparent;
+    border:2px solid #000;
+    cursor: pointer;
+
+    transition: 0.5s;
+}
+
+.contato .icons-contatos button i{
+    font-size: 20px;
+}
+
+.contato .icons-contatos button:hover {
+    background-color: #000;
+    color: white;
+}
+
+.icons-contatos .btn-contato-link{
+       display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 60%;
+    height: 60px;
+    margin: 0 auto 20px auto;
+    padding: 0 60px;
+
+    background-color: transparent;
+    border:2px solid #000;
+    cursor: pointer;
+
+    transition: 0.5s;
+}
+
+
+
+.mapa-container{
+    display:none;
+    margin-top:20px;
+    border-radius:8px;
+    overflow:hidden;
+}
+
+/* Sobre  */
+
+.sobre{
+    padding:60px 10%;
+}
+
+.tituloSobre h3 span{
+    color:#0072B1;
+}
+
+.timeline{
+    border-left:3px solid #238DC1;
+    padding-left:20px;
+}
+
+.timeline-item{
+    margin-bottom:25px;
+}
+
+.timeline-item h4{
+    color:#238DC1;
+    margin-bottom:5px;
+}
+
+.fraseFinal{
+    margin-top:30px;
+    font-size:18px;
+}
+
+
+
+/* foter  */
+
+.footer{
+    background:#111;
+    color:#fff;
+    padding:50px 10% 20px;
+}
+
+.containerFooter{
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    gap:40px;
+}
+
+.footer-col{
+    max-width:300px;
+}
+
+.footer-col h3 span{
+    color:#0072B1;
+}
+
+.footer-col h4{
+    margin-bottom:15px;
+}
+
+.footer-col ul{
+    list-style:none;
+    padding:0;
+}
+
+.footer-col ul li{
+    margin-bottom:8px;
+}
+
+.footer-col ul li a{
+    text-decoration:none;
+    color:#ccc;
+    transition:0.3s;
+}
+
+.footer-col ul li a:hover{
+    color:#238DC1;
+}
+
+.footer-bottom{
+    border-top:1px solid #333;
+    margin-top:30px;
+    padding-top:15px;
+    text-align:center;
+    font-size:14px;
+    color:#aaa;
+}
+
+
+
+/* RESPONSIVIDADE */
+   
+
+@media screen and (max-width: 1024px) {
+    /* Ajuste para tablets e telas médias */
+    .interface {
+        padding: 0 5%;
+    }
+    
+    .hero-site .txt-hero h1 {
+        font-size: 3em;
+    }
+    
+    .vantagens .itens-container {
+        gap: 5%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    
+
+    
+    header .menu-desktop {
+        display: none; 
+    }
+    
+    header .interface {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    /* Hero Section */
+    section.hero-site {
+        height: auto;
+        padding: 100px 0;
+    }
+
+    .hero-site .txt-hero h1 {
+        font-size: 2.2em;
+        line-height: 45px;
+        text-align: center;
+    }
+
+    .hero-site .txt-hero p {
+        text-align: center;
+        font-size: 18px;
+    }
+
+    .hero-site .interface {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    /* Vantagens */
+    .vantagens .itens-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .vantagens .itens-container .img-itens img {
+        max-width: 100%; 
+        margin-bottom: 20px;
+    }
+
+    /* Contato */
+    .txt-contato, .icons-contatos {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    .contato .icons-contatos button {
+        width: 90%;
+        padding: 0 20px;
+    }
+
+    /* Sobre e Footer */
+    .sobre {
+        padding: 40px 5%;
+    }
+
+    .containerFooter {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-col {
+        max-width: 100%;
+    }
+}

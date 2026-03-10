@@ -1,0 +1,289 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    background-color:#f4f4f4;
+    color:#222;
+    left:2;
+    right: 2;
+}
+
+/* CONTAINER */
+
+.interface{
+    max-width:1280px;
+    margin:0 auto;
+    padding:0 20px;
+}
+
+.interface2{
+    max-width:1000px;
+    margin:140px auto;
+}
+
+/* HEADER */
+
+header{
+    width:100%;
+    padding:18px 0;
+    position:fixed;
+    top:0;
+    left:0;
+    background:#000;
+    box-shadow:0 2px 10px rgba(0,0,0,0.15);
+    z-index:1000;
+}
+
+header .interface{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+header .logo img{
+    max-width:170px;
+}
+
+/* MENU */
+
+header .menu-desktop nav ul{
+    list-style:none;
+}
+
+header .menu-desktop nav ul li{
+    display:inline-block;
+    margin:0 25px;
+}
+
+header .menu-desktop nav ul li a{
+    color:#ffffff;
+    text-decoration:none;
+    font-weight:500;
+    letter-spacing:0.5px;
+    transition:0.3s;
+}
+
+header .menu-desktop nav ul li a:hover{
+    color:#238DC1;
+}
+
+/* BOTÃO */
+
+header .btn-contato button{
+    width:140px;
+    height:44px;
+    font-size:15px;
+    font-weight:500;
+    background:transparent;
+    border:1px solid #ffffff;
+    color:#ffffff;
+    border-radius:6px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+header .btn-contato button:hover{
+    background:#238DC1;
+    border-color:#238DC1;
+}
+
+/* SEÇÃO ADVOGADOS */
+
+section.vantagens{
+    padding:170px 0 80px 0;
+}
+/* SEÇÃO ADVOGADOS */
+
+section.vantagens{
+    padding:170px 0 80px 0;
+}
+
+/* CARD ADVOGADO */
+
+.vantagens .itens-container2{
+    background-color:#ffffff;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:10%;
+    margin-bottom:60px;
+
+    padding:50px;
+
+    border-radius:12px;
+
+    box-shadow:
+        0 4px 6px rgba(0,0,0,0.05),
+        0 10px 20px rgba(0,0,0,0.08);
+
+    transition:0.35s ease;
+}
+
+/* HOVER PROFISSIONAL */
+
+.vantagens .itens-container2:hover{
+    transform:translateY(-5px);
+    box-shadow:
+        0 10px 20px rgba(0,0,0,0.08),
+        0 20px 40px rgba(0,0,0,0.12);
+}
+
+/* TEXTO */
+
+.txt-itens2{
+    text-align:center;
+    max-width:650px;
+}
+
+.txt-itens2 h3{
+    font-size:38px;
+    line-height:44px;
+    margin-bottom:18px;
+    font-weight:600;
+    color:#111;
+}
+
+
+
+.txt-itens2 p{
+    font-size:17px;
+    line-height:30px;
+    color:#555;
+}
+
+.txt-itens2 .imagemProfissional{
+    display:flex;
+    justify-content:center;
+    padding-top:30px;
+}
+
+.txt-itens2 .imagemProfissional img{
+    width:250px; 
+    height:auto;        
+    border-radius:10%;
+    box-shadow: -10px 0px 15px -5px rgba(0,0,0,0.5);
+}
+
+
+/* foter  */
+
+.footer{
+    background:#111;
+    color:#fff;
+    padding:50px 10% 20px;
+}
+
+.containerFooter{
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    gap:40px;
+}
+
+.footer-col{
+    max-width:300px;
+}
+
+.footer-col h3 span{
+    color:#0072B1;
+}
+
+.footer-col h4{
+    margin-bottom:15px;
+}
+
+.footer-col ul{
+    list-style:none;
+    padding:0;
+}
+
+.footer-col ul li{
+    margin-bottom:8px;
+}
+
+.footer-col ul li a{
+    text-decoration:none;
+    color:#ccc;
+    transition:0.3s;
+}
+
+.footer-col ul li a:hover{
+    color:#238DC1;
+}
+
+.footer-bottom{
+    border-top:1px solid #333;
+    margin-top:30px;
+    padding-top:15px;
+    text-align:center;
+    font-size:14px;
+    color:#aaa;
+}
+
+/*  RESPONSIVIDADE */
+
+@media screen and (max-width: 768px) {
+    /* 1. Ajuste na Seção de Contato */
+    .txt-contato, .icons-contatos {
+        display: block; 
+        width: 100%;    
+        margin-right: 0;
+        text-align: center;
+    }
+
+    .contato .txt-contato h3 {
+        font-size: 1.8em; 
+        line-height: 40px;
+    }
+
+    .contato .icons-contatos button, 
+    .icons-contatos .btn-contato-link {
+        width: 90%;      
+        padding: 0 20px; 
+        margin: 0 auto 15px auto; 
+    }
+
+    
+    .sobre {
+        padding: 40px 5%; 
+    }
+
+    .timeline {
+        padding-left: 15px; 
+    }
+
+    /* 3. Ajuste no Footer */
+    .footer {
+        padding: 40px 5% 20px;
+    }
+
+    .containerFooter {
+        flex-direction: column; 
+        align-items: center;    
+        text-align: center;
+        gap: 30px;
+    }
+
+    .footer-col {
+        max-width: 100%; 
+    }
+
+    .footer-col ul li {
+        margin-bottom: 12px; 
+    }
+}
+
+
+@media screen and (max-width: 375px) {
+    .hero-site .txt-hero h1 {
+        font-size: 1.8em;
+    }
+    
+    .vantagens .itens-container .img-itens img {
+        width: 100%;
+    }
+}
